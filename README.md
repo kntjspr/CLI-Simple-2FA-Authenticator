@@ -5,4 +5,4 @@ It uses OTP.NET library https://github.com/kspearrin/Otp.NET
 
 ## Features
 - A real-time 30 second timer.
-- Prints new OTP every 30 seconds.
+- Prints new 6 digit OTP every 30 seconds.
