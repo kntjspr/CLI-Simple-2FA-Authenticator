@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OtpNet;
 
-
+byte[] secret;
 
 void Welcome()
 {
@@ -19,7 +19,7 @@ Welcome();
 Console.Write("Enter 2FA Secret: ");
 string base32Secret = Console.ReadLine();
 
-byte[] secret; //Init secret for try catch
+
 try
 {
       secret = Base32Encoding.ToBytes(base32Secret);
@@ -53,7 +53,7 @@ while (loop == true)
 
     if (TimeRemaining() == 30) // If the countdown goes back to 30 again then we'll refresh to get the new code
     {
-        GC.Collect(); //C# Garbage Collector to free memory.
+       
         Console.Clear();
         Welcome();
         Console.Write("Enter 2FA Secret: " + base32Secret); // Print again the inputted secret key
