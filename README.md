@@ -6,5 +6,5 @@ TOTP specified in [RFC 6238](https://datatracker.ietf.org/doc/html/rfc6238/)
 It uses OTP.NET library https://github.com/kspearrin/Otp.NET
 
 ## Features
-- A real-time 30 second timer.
+- A real-time 30 second timer by converting epoch time.
 - Prints new 6 digit OTP every 30 seconds.
