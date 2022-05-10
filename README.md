@@ -4,7 +4,7 @@ A simple time-based one-time password authenticator on CLI.
 TOTP specified in [RFC 6238](https://datatracker.ietf.org/doc/html/rfc6238/)
 
 ### Dependencies:
- [OTP.Net](https://github.com/kspearrin/Otp.NET)
+- [OTP.Net](https://github.com/kspearrin/Otp.NET)
 
 ## Features
 - A real-time 30 second timer via epoch (unix) time.
