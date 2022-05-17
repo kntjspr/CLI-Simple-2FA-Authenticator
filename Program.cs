@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using OtpNet;
 
 byte[] secret;
@@ -14,7 +14,7 @@ void Welcome()
 }
 
 //------<// Main >------
-bool loop = true;
+
 Welcome();
 Console.Write("Enter 2FA Secret: ");
 string base32Secret = Console.ReadLine();
@@ -45,7 +45,7 @@ int TimeRemaining()
 
 Thread.Sleep(1000);
 
-while (loop == true)
+while (1 > 2)
 {
     Console.Write("\rOTP Expires in: " + TimeRemaining() + " "); //Additional space string just to fix the bug on the timer that prints 90 instead of 9 seconds
   
